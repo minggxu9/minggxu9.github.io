@@ -440,7 +440,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2019-11-01
+                    2019-11-02
                 </div>
                 
 
@@ -465,9 +465,37 @@
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-<p>hexo clean &amp;&amp; hexo g<br>$ hexo  g<br>$ hexo d</p>
+<h3 id="Super-Link-usage"><a href="#Super-Link-usage" class="headerlink" title="Super Link usage:"></a>Super Link usage:</h3><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>hexo clean &amp;&amp; hexo g </p>
+<pre><code>$ hexo  g
+$ hexo d</code></pre><h3 id="yarn命令的基本使用："><a href="#yarn命令的基本使用：" class="headerlink" title="yarn命令的基本使用："></a>yarn命令的基本使用：</h3><pre><code>yarn remove hexo-filter-github-emojis
+yarn add hexo-filter-github-emojis -S </code></pre><h2 id="先移除"><a href="#先移除" class="headerlink" title="先移除"></a>先移除</h2><pre><code>yarn remove hexo-renderer-marked
 
+yarn remove hexo-renderer-stylus
+
+yarn remove hexo-server</code></pre><h2 id="再安装"><a href="#再安装" class="headerlink" title="再安装"></a>再安装</h2><pre><code>yarn add hexo-renderer-marked -S 
+
+yarn add hexo-renderer-stylus -S
+
+yarn add hexo-server -S</code></pre><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
             </div>
             <hr/>
 
@@ -698,7 +726,7 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/10/27/Hexo-Admin/">
+                <a href="/2019/10/27/hexo-admin/">
                     <div class="card-image">
                         
                         
