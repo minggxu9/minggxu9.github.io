@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Next</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://minggxu9.github.io/index.html/"/>
+  <updated>2019-11-02T03:35:19.000Z</updated>
+  <id>https://minggxu9.github.io/index.html/</id>
+  
+  <author>
+    <name>Joe Z M XU</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo-theme-matery 主题设置</title>
+    <link href="https://minggxu9.github.io/index.html/2019/11/02/hexo-theme-matery-zhu-ti-she-zhi/"/>
+    <id>https://minggxu9.github.io/index.html/2019/11/02/hexo-theme-matery-zhu-ti-she-zhi/</id>
+    <published>2019-11-02T03:35:15.000Z</published>
+    <updated>2019-11-02T03:35:19.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;hexo-theme-matery&quot;&gt;&lt;a href=&quot;#hexo-theme-matery&quot; class=&quot;headerlink&quot; title=&quot;hexo-theme-matery&quot;&gt;&lt;/a&gt;hexo-theme-matery&lt;/h1&gt;&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>如何使用markdown</title>
+    <link href="https://minggxu9.github.io/index.html/2019/11/02/ru-he-shi-yong-markdown/"/>
+    <id>https://minggxu9.github.io/index.html/2019/11/02/ru-he-shi-yong-markdown/</id>
+    <published>2019-11-02T03:20:00.000Z</published>
+    <updated>2019-11-02T03:39:22.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;hexo-filter-github-emojis-插件的使用&quot;&gt;&lt;a href=&quot;#hexo-filter-github-emojis-插件的使用&quot; class=&quot;headerlink&quot; title=&quot;hexo-filter-github-emojis 
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo Admin</title>
+    <link href="https://minggxu9.github.io/index.html/2019/10/27/hexo-admin/"/>
+    <id>https://minggxu9.github.io/index.html/2019/10/27/hexo-admin/</id>
+    <published>2019-10-27T03:42:39.000Z</published>
+    <updated>2019-10-27T03:43:42.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;this is a good day for us to start.&lt;br&gt;please let us to begin with.&lt;/p&gt;
+&lt;p&gt;thanks for your concern, we will continue to enhancement our
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://minggxu9.github.io/index.html/2019/10/26/hello-world/"/>
+    <id>https://minggxu9.github.io/index.html/2019/10/26/hello-world/</id>
+    <published>2019-10-26T13:28:57.000Z</published>
+    <updated>2019-11-02T08:29:05.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>

@@ -469,15 +469,17 @@
 <p>hexo clean &amp;&amp; hexo g </p>
 <pre><code>$ hexo  g
 $ hexo d</code></pre><h3 id="yarn命令的基本使用："><a href="#yarn命令的基本使用：" class="headerlink" title="yarn命令的基本使用："></a>yarn命令的基本使用：</h3><pre><code>yarn remove hexo-filter-github-emojis
-yarn add hexo-filter-github-emojis -S </code></pre><h2 id="先移除"><a href="#先移除" class="headerlink" title="先移除"></a>先移除</h2><pre><code>yarn remove hexo-renderer-marked
+yarn add hexo-filter-github-emojis -S </code></pre><h2 id="先移除"><a href="#先移除" class="headerlink" title="先移除"></a>先移除</h2><pre><code>yarn remove hexo-generator-feed 
 
 yarn remove hexo-renderer-stylus
 
-yarn remove hexo-server</code></pre><h2 id="再安装"><a href="#再安装" class="headerlink" title="再安装"></a>再安装</h2><pre><code>yarn add hexo-renderer-marked -S 
+yarn remove hexo-server</code></pre><h2 id="再安装"><a href="#再安装" class="headerlink" title="再安装"></a>再安装</h2><pre><code>yarn hexo-generator-feed  -s
+yarn add hexo-renderer-marked -S 
 
 yarn add hexo-renderer-stylus -S
 
-yarn add hexo-server -S</code></pre><script>
+yarn add hexo-server -S</code></pre><p>hexo-generator-feed </p>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
