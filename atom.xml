@@ -1,47 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>勇敢的心</title>
+  <title>Blog Circles</title>
   
-  <subtitle>再持顺利</subtitle>
+  <subtitle>在路上</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://minggxu9.github.io/index.html/"/>
-  <updated>2019-11-06T10:09:54.000Z</updated>
+  <updated>2019-11-06T10:23:56.000Z</updated>
   <id>https://minggxu9.github.io/index.html/</id>
   
   <author>
-    <name>畅春园先生</name>
+    <name>Joe z m xu</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>常用的一些电商术语介绍</title>
-    <link href="https://minggxu9.github.io/index.html/2019/11/06/chang-yong-de-yi-xie-dian-shang-zhu-yu-jie-shao/"/>
-    <id>https://minggxu9.github.io/index.html/2019/11/06/chang-yong-de-yi-xie-dian-shang-zhu-yu-jie-shao/</id>
-    <published>2019-11-06T10:09:54.000Z</published>
-    <updated>2019-11-06T10:09:54.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return; }
-       
-        
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
   
   <entry>
     <title>双十一及其销售额</title>
@@ -71,11 +44,38 @@
   </entry>
   
   <entry>
+    <title>常用的一些电商术语介绍</title>
+    <link href="https://minggxu9.github.io/index.html/2019/11/06/chang-yong-de-yi-xie-dian-shang-zhu-yu-jie-shao/"/>
+    <id>https://minggxu9.github.io/index.html/2019/11/06/chang-yong-de-yi-xie-dian-shang-zhu-yu-jie-shao/</id>
+    <published>2019-11-06T09:37:22.000Z</published>
+    <updated>2019-11-06T10:34:56.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;常用的一些电商术语介绍&quot;&gt;&lt;a href=&quot;#常用的一些电商术语介绍&quot; class=&quot;headerlink&quot; title=&quot;常用的一些电商术语介绍&quot;&gt;&lt;/a&gt;常用的一些电商术语介绍&lt;/h2&gt;&lt;h3 id=&quot;举例：&quot;&gt;&lt;a href=&quot;#举例：&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="电商故事" scheme="https://minggxu9.github.io/index.html/categories/%E7%94%B5%E5%95%86%E6%95%85%E4%BA%8B/"/>
+    
+    
+      <category term="双十一，苏宁" scheme="https://minggxu9.github.io/index.html/tags/%E5%8F%8C%E5%8D%81%E4%B8%80%EF%BC%8C%E8%8B%8F%E5%AE%81/"/>
+    
+  </entry>
+  
+  <entry>
     <title>如何使用markdown</title>
     <link href="https://minggxu9.github.io/index.html/2019/11/02/ru-he-shi-yong-markdown/"/>
     <id>https://minggxu9.github.io/index.html/2019/11/02/ru-he-shi-yong-markdown/</id>
     <published>2019-11-02T03:20:00.000Z</published>
-    <updated>2019-11-03T11:26:01.000Z</updated>
+    <updated>2019-11-06T10:36:17.000Z</updated>
     
     <summary type="html">
     
