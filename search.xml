@@ -4,9 +4,9 @@
   
     
     <entry>
-      <title>电商术语</title>
-      <link href="/2019/11/06/dian-shang-zhu-yu/"/>
-      <url>/2019/11/06/dian-shang-zhu-yu/</url>
+      <title>常用的一些电商术语介绍</title>
+      <link href="/2019/11/06/chang-yong-de-yi-xie-dian-shang-zhu-yu-jie-shao/"/>
+      <url>/2019/11/06/chang-yong-de-yi-xie-dian-shang-zhu-yu-jie-shao/</url>
       
         <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
