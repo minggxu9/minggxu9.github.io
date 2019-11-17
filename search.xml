@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Ubuntu MySQL 安装与使用</title>
+      <link href="/2019/11/17/ubuntu-mysql-an-zhuang-yu-shi-yong/"/>
+      <url>/2019/11/17/ubuntu-mysql-an-zhuang-yu-shi-yong/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Ubuntu-MySQL-安装与使用"><a href="#Ubuntu-MySQL-安装与使用" class="headerlink" title="Ubuntu MySQL 安装与使用"></a>Ubuntu MySQL 安装与使用</h2><p>大家好。在这里我跟你介绍一下MySQL.它是一个在互联网与企业级大量使用的数据库。 在了解它的一些概念之后。有必要介绍一下它的安装。<br>以及我们如何使用它。</p><p>如果我们启动的时候出现问题，我们可以通过下面的命令开查看它的状态</p><pre><code>   systemctl status mysql.service</code></pre><p>因为出现下面的问题</p><pre><code>root@ubuntu:~# systemctl status mysql.service● mysql.service - MySQL Community Server   Loaded: loaded (/lib/systemd/system/mysql.service; disabled; vendor preset: enabled)   Active: inactive (dead)Nov 17 18:45:07 ubuntu systemd[1]: Starting MySQL Community Server...Nov 17 18:45:07 ubuntu mysql-systemd-start[7480]: MySQL system database not found in /var/lib/mysql. Please run mysqld --initialize.Nov 17 18:45:07 ubuntu systemd[1]: mysql.service: Control process exited, code=exited status=1Nov 17 18:45:07 ubuntu systemd[1]: Failed to start MySQL Community Server.Nov 17 18:45:07 ubuntu systemd[1]: mysql.service: Unit entered failed state.Nov 17 18:45:07 ubuntu systemd[1]: mysql.service: Failed with result 'exit-code'.Nov 17 18:45:07 ubuntu systemd[1]: mysql.service: Service hold-off time over, scheduling restart.Nov 17 18:45:07 ubuntu systemd[1]: Stopped MySQL Community Server.Nov 17 18:45:07 ubuntu systemd[1]: mysql.service: Start request repeated too quickly.Nov 17 18:45:07 ubuntu systemd[1]: Failed to start MySQL Community Server.</code></pre><p>下面是使用日常使用MySQL常用命令：<br>一、 启动方式<br>1、使用 service 启动：service mysql start<br>2、使用 mysqld 脚本启动：/etc/inint.d/mysql start<br>3、使用 safe_mysqld 启动：safe_mysql&amp;</p><p>二、停止<br>1、使用 service 启动：service mysql stop<br>2、使用 mysqld 脚本启动：/etc/inint.d/mysql stop<br>3、mysqladmin shutdown</p><p>三、重启<br>1、使用 service 启动：service mysql restart<br>2、使用 mysqld 脚本启动：/etc/inint.d/mysql restart</p><p>查看MySQL的依赖：</p><pre><code>    dpkg --list|grep mysql</code></pre><p>卸载MySQL:</p><pre><code>sudo apt-get remove mysql-commonsudo apt-get autoremove --purge mysql-server-5.7</code></pre><p>安装MySQL:</p><pre><code>下载软件包：wget -c https://dev.mysql.com/get/mysql-apt-config_0.8.10-1_all.deb然后使用以下 dpkg 命令安装下载好的 MySQL 存储库软件包：sudo dpkg -i mysql-apt-config_0.8.10-1_all.deb从所有已配置的存储库（包括新添加的 MySQL 8存储库）中下载最新的软件包信息sudo apt-get update然后运行如下命令安装 MySQL 8 社区服务器、客户端和数据库公用文件：sudo apt-get install mysql-server通过安装过程，将会要求为 MySQL 8 服务器的 root 用户输入密码，在输入和再次验证后按回车继续。</code></pre><p>Failed to restart mysql.service: Unit mysql.service is masked</p><pre><code>systemctl unmask mysql.serviceservice mysql start</code></pre><p>E:Could not get lock /var/lib/apt/lists/lock - open (11: Resource temporarily unavailable)</p><p>解决方法：输入以下命令</p><pre><code>sudo rm /var/cache/apt/archives/locksudo rm /var/lib/dpkg/lock</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 服务器配置 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> MySQL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>PHP使用的一些常用指令</title>
       <link href="/2019/11/17/php-shi-yong-de-yi-xie-zhi-ling/"/>
       <url>/2019/11/17/php-shi-yong-de-yi-xie-zhi-ling/</url>

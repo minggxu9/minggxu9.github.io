@@ -4,10 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="PHP使用的一些常用指令, Blog Circles">
-    <meta name="description" content="PHP使用的一些常用指令如果是源码安装的时候，php可能没有启动。你可能用手动运行。这时你要用以及命令：
-  php-fpm7.2 (我这里安装的是7.2版本)如果你想查看当前PHP版本
-   php -v如果你想查看一下php所安装的模块">
+    <meta name="keywords" content="Ubuntu MySQL 安装与使用, Blog Circles">
+    <meta name="description" content="Ubuntu MySQL 安装与使用大家好。在这里我跟你介绍一下MySQL.它是一个在互联网与企业级大量使用的数据库。 在了解它的一些概念之后。有必要介绍一下它的安装。以及我们如何使用它。
+如果我们启动的时候出现问题，我们可以通过下面的命令">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>PHP使用的一些常用指令 | Blog Circles</title>
+    <title>Ubuntu MySQL 安装与使用 | Blog Circles</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -268,13 +267,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        PHP使用的一些常用指令
+                        Ubuntu MySQL 安装与使用
                     </div>
                 </div>
             </div>
@@ -386,8 +385,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/PHP/">
-                                <span class="chip bg-color">PHP</span>
+                            <a href="/tags/MySQL/">
+                                <span class="chip bg-color">MySQL</span>
                             </a>
                         
                     </div>
@@ -398,8 +397,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E7%BC%96%E7%A8%8B/" class="post-category">
-                                编程
+                            <a href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/" class="post-category">
+                                服务器配置
                             </a>
                         
                     </div>
@@ -434,24 +433,51 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="PHP使用的一些常用指令"><a href="#PHP使用的一些常用指令" class="headerlink" title="PHP使用的一些常用指令"></a>PHP使用的一些常用指令</h3><p>如果是源码安装的时候，php可能没有启动。你可能用手动运行。这时你要用以及命令：</p>
-<pre><code>  php-fpm7.2 (我这里安装的是7.2版本)</code></pre><p>如果你想查看当前PHP版本</p>
-<pre><code>   php -v</code></pre><p>如果你想查看一下php所安装的模块</p>
-<pre><code>  php -m</code></pre><p>重启nginx</p>
-<pre><code>/usr/sbin/nginx -s reload</code></pre><p>Smb 重启</p>
-<pre><code>sudo /etc/init.d/smbd restart</code></pre><p>查找文件位置：</p>
-<pre><code>sudo find / -name 'php.ini'
-locate php</code></pre><p>php.ini需要存放的目录</p>
-<pre><code>Php cli:           /etc/php/7.2/cli/php.ini
-Php runtime:       /etc/php/7.2/fpm/php.ini
-PHP config:        /usr/bin/php-config7.2</code></pre><p>设置访问权限</p>
-<pre><code>chmod -R  777 /Users/xxxxx/sourcecodes/phpdir/phpstudy/Module/mvc/logs</code></pre><p>如何安装一个模块呢。下面以PDO为例介绍：</p>
-<pre><code>
-/usr/bin/phpize7.2 
-./configure –-with-php-config=/usr/bin/php-config7.2  –-with-pdo-mysql=/usr/bin/mysql/
-make &amp;&amp; make install 
-</code></pre><p>参考<br><a href="https://blog.csdn.net/weixin_42161963/article/details/80536283" target="_blank" rel="noopener">https://blog.csdn.net/weixin_42161963/article/details/80536283</a></p>
-<script>
+                <h2 id="Ubuntu-MySQL-安装与使用"><a href="#Ubuntu-MySQL-安装与使用" class="headerlink" title="Ubuntu MySQL 安装与使用"></a>Ubuntu MySQL 安装与使用</h2><p>大家好。在这里我跟你介绍一下MySQL.它是一个在互联网与企业级大量使用的数据库。 在了解它的一些概念之后。有必要介绍一下它的安装。<br>以及我们如何使用它。</p>
+<p>如果我们启动的时候出现问题，我们可以通过下面的命令开查看它的状态</p>
+<pre><code>   systemctl status mysql.service</code></pre><p>因为出现下面的问题</p>
+<pre><code>root@ubuntu:~# systemctl status mysql.service
+● mysql.service - MySQL Community Server
+   Loaded: loaded (/lib/systemd/system/mysql.service; disabled; vendor preset: enabled)
+   Active: inactive (dead)
+
+Nov 17 18:45:07 ubuntu systemd[1]: Starting MySQL Community Server...
+Nov 17 18:45:07 ubuntu mysql-systemd-start[7480]: MySQL system database not found in /var/lib/mysql. Please run mysqld --initialize.
+Nov 17 18:45:07 ubuntu systemd[1]: mysql.service: Control process exited, code=exited status=1
+Nov 17 18:45:07 ubuntu systemd[1]: Failed to start MySQL Community Server.
+Nov 17 18:45:07 ubuntu systemd[1]: mysql.service: Unit entered failed state.
+Nov 17 18:45:07 ubuntu systemd[1]: mysql.service: Failed with result 'exit-code'.
+Nov 17 18:45:07 ubuntu systemd[1]: mysql.service: Service hold-off time over, scheduling restart.
+Nov 17 18:45:07 ubuntu systemd[1]: Stopped MySQL Community Server.
+Nov 17 18:45:07 ubuntu systemd[1]: mysql.service: Start request repeated too quickly.
+Nov 17 18:45:07 ubuntu systemd[1]: Failed to start MySQL Community Server.
+</code></pre><p>下面是使用日常使用MySQL常用命令：<br>一、 启动方式<br>1、使用 service 启动：service mysql start<br>2、使用 mysqld 脚本启动：/etc/inint.d/mysql start<br>3、使用 safe_mysqld 启动：safe_mysql&amp;</p>
+<p>二、停止<br>1、使用 service 启动：service mysql stop<br>2、使用 mysqld 脚本启动：/etc/inint.d/mysql stop<br>3、mysqladmin shutdown</p>
+<p>三、重启<br>1、使用 service 启动：service mysql restart<br>2、使用 mysqld 脚本启动：/etc/inint.d/mysql restart</p>
+<p>查看MySQL的依赖：</p>
+<pre><code>    dpkg --list|grep mysql</code></pre><p>卸载MySQL:</p>
+<pre><code>sudo apt-get remove mysql-common
+sudo apt-get autoremove --purge mysql-server-5.7</code></pre><p>安装MySQL:</p>
+<pre><code>下载软件包：
+wget -c https://dev.mysql.com/get/mysql-apt-config_0.8.10-1_all.deb
+
+然后使用以下 dpkg 命令安装下载好的 MySQL 存储库软件包：
+sudo dpkg -i mysql-apt-config_0.8.10-1_all.deb
+
+从所有已配置的存储库（包括新添加的 MySQL 8存储库）中下载最新的软件包信息
+sudo apt-get update
+
+然后运行如下命令安装 MySQL 8 社区服务器、客户端和数据库公用文件：
+sudo apt-get install mysql-server
+
+通过安装过程，将会要求为 MySQL 8 服务器的 root 用户输入密码，在输入和再次验证后按回车继续。
+</code></pre><p>Failed to restart mysql.service: Unit mysql.service is masked</p>
+<pre><code>systemctl unmask mysql.service
+service mysql start</code></pre><p>E:Could not get lock /var/lib/apt/lists/lock - open (11: Resource temporarily unavailable)</p>
+<p>解决方法：输入以下命令</p>
+<pre><code>sudo rm /var/cache/apt/archives/lock
+
+sudo rm /var/lib/dpkg/lock</code></pre><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -494,7 +520,7 @@ make &amp;&amp; make install
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://minggxu9.github.io/index.html/2019/11/17/php-shi-yong-de-yi-xie-zhi-ling/">https://minggxu9.github.io/index.html/2019/11/17/php-shi-yong-de-yi-xie-zhi-ling/</a>
+                    <a href="https://minggxu9.github.io/index.html/2019/11/17/ubuntu-mysql-an-zhuang-yu-shi-yong/">https://minggxu9.github.io/index.html/2019/11/17/ubuntu-mysql-an-zhuang-yu-shi-yong/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -532,8 +558,8 @@ make &amp;&amp; make install
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/PHP/">
-                                    <span class="chip bg-color">PHP</span>
+                                <a href="/tags/MySQL/">
+                                    <span class="chip bg-color">MySQL</span>
                                 </a>
                             
                         </div>
@@ -722,9 +748,10 @@ make &amp;&amp; make install
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2019/11/17/ubuntu-mysql-an-zhuang-yu-shi-yong/">
                     <div class="card-image">
@@ -743,9 +770,9 @@ make &amp;&amp; make install
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-11-17
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-11-17
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -758,6 +785,7 @@ make &amp;&amp; make install
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -776,20 +804,21 @@ make &amp;&amp; make install
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/11/17/shi-yong-mac-smb-lian-jie-ubuntu-xu-ni-ji/">
+                <a href="/2019/11/17/php-shi-yong-de-yi-xie-zhi-ling/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="使用Mac Samba连接ubuntu虚拟机">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="PHP使用的一些常用指令">
                         
-                        <span class="card-title">使用Mac Samba连接ubuntu虚拟机</span>
+                        <span class="card-title">PHP使用的一些常用指令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            使用Mac Samba连接ubuntu虚拟机在使用Mac的时候。我们有时会创建虚拟机。这时候就会涉及到共享文件夹的问题。1.比如我想在宿主机上访问虚拟机的文件夹，同时还能够实时修改它。2.虚拟机同时要把文件夹共享出来。
-在这个时候如果我们使
+                            PHP使用的一些常用指令如果是源码安装的时候，php可能没有启动。你可能用手动运行。这时你要用以及命令：
+  php-fpm7.2 (我这里安装的是7.2版本)如果你想查看当前PHP版本
+   php -v如果你想查看一下php所安装的模块
                         
                     </div>
                     <div class="publish-info">
@@ -800,8 +829,8 @@ make &amp;&amp; make install
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE/" class="post-category">
-                                    服务器配置
+                            <a href="/categories/%E7%BC%96%E7%A8%8B/" class="post-category">
+                                    编程
                                 </a>
                             
                             
@@ -811,12 +840,8 @@ make &amp;&amp; make install
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Samba/">
-                        <span class="chip bg-color">Samba</span>
-                    </a>
-                    
-                    <a href="/tags/Mac/">
-                        <span class="chip bg-color">Mac</span>
+                    <a href="/tags/PHP/">
+                        <span class="chip bg-color">PHP</span>
                     </a>
                     
                 </div>
