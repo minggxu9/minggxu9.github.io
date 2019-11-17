@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="private, Blog Circles">
-    <meta name="description" content="private | Blog Circles">
+    <meta name="keywords" content="Blog Circles">
+    <meta name="description" content="Blog Circles">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>private | Blog Circles</title>
+    <title>Blog Circles</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -262,67 +262,163 @@
 
 </header>
 
-    <link rel="stylesheet" href="/css/gallery.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/justifiedGallery/3.7.0/css/justifiedGallery.min.css">
+    
+    <div class="bg-cover pd-header about-cover">
+    <div class="container">
+    <div class="row">
+    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+        <div class="brand">
+            <div class="title center-align">
+                
+                在路上
+                
+            </div>
 
-
-
-
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
-    <div class="container" style="right: 0px;left: 0px;">
-        <div class="row">
-            <div class="col s12 m12 l12">
-                <div class="brand">
-                    <div class="description center-align post-title">
-                        private
-                    </div>
-                </div>
+            <div class="description center-align">
+                
+                <!-- <span id="typed"></span> -->
+           
+                <span id="hitokoto"></span>
+                <!-- <i class="fa fa-volume-up fa-lg fa-fw text-color" id="hitokoto"></i>  -->
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+                <!-- <script>
+                    var typed = new Typed("#typed", {
+                        strings: ['从来没有真正的绝境, 只有心灵的迷途', 'Never really desperate, only the lost of the soul'],
+                        startDelay: 300,
+                        typeSpeed: 100,
+                        loop: true,
+                        backSpeed: 50,
+                        showCursor: true
+                    });
+                </script> -->
+                
             </div>
         </div>
     </div>
 </div>
 
-
-
-<!--            "          <p class=\"photo-name\">" + photo + "</p>\n" +
-文件名先注释掉-->
-<div class="container">
-    <div class="photo-wrapper">
-        
-
-        <script src="/js/crypto-js.js"></script>
-        <script src="/js/gallery-encrypt.js"></script>
-
-        <div id="hbe-security">
-            <div class="hbe-input-container">
-                <input type="password" class="hbe-form-control" id="pass" placeholder="请输入密码查看内容"/>
-                <a href="javascript:;" class="btn-decrypt" id="btn_decrypt">解密</a>
-            </div>
-        </div>
-        <div id="mygallery">
-
-            <div class="waterfall" id="encrypt-blog" style="display:none">
-                U2FsdGVkX1/H9DRysnxyyzi7qAuTbI22Vg20H9+wtfq9J1Qy/8kll6TtwOtI5o03suiLb6VHLR55t69BgrC3pMMGDtpkhtpo8llAv+RlB/ZSh/gI/6Lk8+uRL4PiBpndCZZ4mxx3m5xB++iuk/81wRHkKeX7jcQeseXBhRqwrb9VR3Eetm55Us+JZS3kQS8I1CRmHYvmHh3xBkJq8I9LbtY+8JgqzkW00yTrWQHFe2/FJWF2Crn1AemMRqtcMsMvPNtLRGB+VNpMh+NGB6PLkkLM93Wf+PQnKrg1BSgBuwWVxNxI3TQ2fE7joySswcZlNRsiz0iSxpYgpMw79TenbieYKfvBxOEum9m7jC46LOcQFZamMXRvTxqqo6jvoEKraLPf23UOFa/C0yWE184KhMrHPwc0Sfo2o3k1gVU4PZr/OeyefNjic/6bQM/WpvMee3m4BDatpLP6ozb5bfCyy03ZOipUCd5oC7IZDZTqslOg0jW9F2/0bnOWRnqh6ho886wY2Effj+5he/R9pEQgYBi+OHg4UHE0IUpcMwMBV867t2tS5jKO524IVqBvB0HCpTOImC5QTxR8t7I8vZNvgJm9inp6ygKTdwjgDJ2mQp5es20AiJD+5XbbRG1FzDjTkNP9yqJ3PSvK9owion0vGA==
-            </div>
-        </div>
-
-        
-    </div>
-</div>
-
-<!--<script src=""></script>-->
-<script src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-<script src="https://cdn.staticfile.org/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js"></script>
 
 <script>
-    // $(".waterfall").lazyload();
-
-    $("a[rel=example_group]").fancybox();
-    $("#encrypt-blog").justifiedGallery({margins: 10, rowHeight: 150});
-
-
+    // 每天切换 banner 图.  Switch banner image every day.
+    $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
 </script>
+
+
+    </div>
+</div>
+
+
+<main class="content">
+
+    
+
+    
+
+    <!-- 所有文章卡片 -->
+    <article id="articles" class="container articles">
+        <div class="row article-row">
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2019/10/27/hexo-admin/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="Hexo Admin">
+                            
+                            <span class="card-title">Hexo Admin</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                this is a good day for us to start.please let us to begin with.
+thanks for your concern, we will continue to enhancement
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-27
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                John Doe
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2019/10/26/hello-world/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                            
+                            <span class="card-title">Hello World</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-26
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                Joe Xu
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+        </div>
+    </article>
+
+</main>
+
+
+<div class="container paging">
+    <div class="row">
+        <div class="col s6 m4 l4">
+            
+            <a href="/"
+               class="left btn-floating btn-large waves-effect waves-light bg-color">
+                <i class="fas fa-angle-left"></i>
+            </a>
+            
+        </div>
+        <div class="page-info col m4 l4 hide-on-small-only">
+            <div class="center-align b-text-gray">2 / 2</div>
+        </div>
+        <div class="col s6 m4 l4">
+            
+            <a class="right btn-floating btn-large disabled">
+                <i class="fas fa-angle-right"></i>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
+
 
 
     <footer class="page-footer bg-color">
