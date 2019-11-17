@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://minggxu9.github.io/index.html/"/>
-  <updated>2019-11-16T17:26:00.000Z</updated>
+  <updated>2019-11-16T17:29:37.000Z</updated>
   <id>https://minggxu9.github.io/index.html/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://minggxu9.github.io/index.html/2019/11/17/php-shi-yong-de-yi-xie-zhi-ling/"/>
     <id>https://minggxu9.github.io/index.html/2019/11/17/php-shi-yong-de-yi-xie-zhi-ling/</id>
     <published>2019-11-16T16:31:43.000Z</published>
-    <updated>2019-11-16T17:26:00.000Z</updated>
+    <updated>2019-11-16T17:29:37.000Z</updated>
     
     <summary type="html">
     
@@ -29,8 +29,7 @@
       
         
         
-          &lt;p&gt;PHP使用的一些常用指令&lt;br&gt;如果是源码安装的时候，php可能没有启动。你可能用手动运行。这时你要用以及命令：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;  php-fpm7.2
+          &lt;h3 id=&quot;PHP使用的一些常用指令&quot;&gt;&lt;a href=&quot;#PHP使用的一些常用指令&quot; class=&quot;headerlink&quot;
         
       
     
